@@ -1,0 +1,69 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 2em;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+select {
+    font-family: 'Charmonman', cursive;
+    background-color: orange;
+}
+
+table,
+th,
+td {
+    vertical-align: top;
+}
+
+img {
+    vertical-align: top;
+}
+
+/* --- Button Container --- */
+/* codes generated from Gemini */
+/* This uses CSS Grid to arrange the buttons */
+.button-container {
+    display: grid;
+    /* Creates 3 columns of equal width */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+/* --- Button Styles --- */
+/* codes generated from Gemini */
+/* Added the 'form' selector to make sure it targets the forms in the container */
+.button-container form {
+    margin: 0; /* Reset default form margin */
+}
+
+input[type=submit] {
+    background-color: #eb3434;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    width: 100%; /* Make button fill its grid cell */
+    border-radius: 8px;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    background-color: #c92a2a; /* Slightly darker on hover */
+}

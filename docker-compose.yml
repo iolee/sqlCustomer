@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # The Web Server (PHP + Apache)
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+
+  # The Database (MySQL)
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_DATABASE: my_database_name
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d  # This automatically imports your SQL file
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
