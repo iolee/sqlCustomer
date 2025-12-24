@@ -7,8 +7,6 @@ Follow these steps to get the project running on your local machine in minutes.
 1. Clone the Repository
 Open your terminal and run:
 
-Bash
-
 git clone https://github.com/iolee/sqlCustomer.git
 cd sqlCustomer
 
@@ -25,8 +23,6 @@ Restart: You may need to restart your computer after installation.
 Open Docker Desktop and wait until the engine is running (the whale icon turns green).
 
 In your terminal (inside the project folder), run:
-
-Bash
 
 docker compose up -d
 Note: This will automatically set up the PHP server and import the database schema from the /sql folder.
@@ -51,4 +47,5 @@ connectdb.php - Database connection settings (configured for Docker).
 /css - Styling and visuals.
 
 /sql - Contains init.sql for automatic database initialization.
+
 
