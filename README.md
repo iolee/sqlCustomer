@@ -8,6 +8,7 @@ Follow these steps to get the project running on your local machine in minutes.
 Open your terminal and run:
 
 git clone https://github.com/iolee/sqlCustomer.git
+
 cd sqlCustomer
 
 2. Prerequisites (Install Docker)
@@ -47,5 +48,6 @@ connectdb.php - Database connection settings (configured for Docker).
 /css - Styling and visuals.
 
 /sql - Contains init.sql for automatic database initialization.
+
 
 
