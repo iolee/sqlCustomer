@@ -1,4 +1,4 @@
-<?php
+<?php if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($message)) { echo $message; } ?>
 //This is the fourth option for inserting a new customer.
 include "connecttodb.php";
 
@@ -186,4 +186,5 @@ if (isset($connection)) {
 </div>
 
 </body>
+
 </html>
