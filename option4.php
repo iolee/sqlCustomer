@@ -1,4 +1,4 @@
-<?php if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($message)) { echo $message; } ?>
+<?php 
 //This is the fourth option for inserting a new customer.
 include "connecttodb.php";
 
@@ -145,7 +145,7 @@ if (isset($connection)) {
 <a href="mainmenu.php" style="font-weight: bold;"><< Back to Main Menu</a>
 
 <!-- Display message only if it's a POST request AND a message was generated -->
-<?php if ($is_post && !empty($message)) { echo $message; } ?>
+<?php if ($_SERVER["REQUEST_METHOD"] == "POST" && !empty($message)) { echo $message; } ?>
 
 <div class="form-container">
     <form method="post" action="option4.php">
@@ -188,3 +188,4 @@ if (isset($connection)) {
 </body>
 
 </html>
+
