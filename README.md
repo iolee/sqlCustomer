@@ -11,6 +11,7 @@ Bash
 
 git clone https://github.com/iolee/sqlCustomer.git
 cd sqlCustomer
+
 2. Prerequisites (Install Docker)
 If you don't have Docker installed, you'll need it to run the environment:
 
@@ -50,3 +51,4 @@ connectdb.php - Database connection settings (configured for Docker).
 /css - Styling and visuals.
 
 /sql - Contains init.sql for automatic database initialization.
+
